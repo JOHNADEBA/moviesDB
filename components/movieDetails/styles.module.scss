@@ -1,0 +1,151 @@
+.first-section {
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+
+  .shadow {
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+
+    .img-container {
+      width: 20rem;
+      min-width: 20rem;
+      height: 100%;
+      padding: 0;
+
+      img {
+        min-width: 20rem;
+        width: 20rem;
+        min-height: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+
+    .info-left {
+      font-family: "Poppins", sans-serif;
+      padding: 0 0 0 1rem;
+
+      .title {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        margin-top: -0.5rem;
+      }
+
+      .multi-info {
+        display: flex;
+        align-items: center;
+        flex-direction: wrap;
+        .info {
+          border: 0.03rem solid rgba(255, 255, 255, 0.5);
+          border-radius: 0.5rem;
+          width: fit-content;
+          padding: 0.2rem 0.5rem;
+          font-weight: 300;
+          opacity: 0.8;
+          font-size: 0.8rem;
+          font-style: italic;
+          margin: 0.5rem 0.5rem 0 0;
+        }
+      }
+
+      .crew {
+        margin: 0.5rem 0;
+        justify-content: space-between;
+        .position {
+          margin: 0;
+          font-size: 0.7rem;
+          opacity: 0.8;
+        }
+      }
+
+      .key,
+      .value {
+        font-size: 1rem;
+        margin: 0 0.3rem 0 0;
+      }
+      .value {
+        margin: 0;
+        opacity: 0.8;
+      }
+
+      .season {
+        border: 0.03rem solid rgba(255, 255, 255, 0.5);
+        border-radius: 0.5rem;
+        width: fit-content;
+        padding: 0.2rem 0.5rem;
+        font-weight: 300;
+        opacity: 0.8;
+        font-size: 0.8rem;
+        margin: 0.5rem 0.5rem 0 0;
+      }
+
+      .overview {
+        font-size: 1.3rem;
+        margin: 1rem 0 0 0;
+      }
+      .detail {
+        margin: 0.3rem 0.9rem 0 0;
+        font-size: 0.8rem;
+      }
+      .more-text {
+        margin: 0.3rem 0.9rem 0 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.video-container {
+  margin: 2rem auto;
+  width: 90%;
+  border-radius: 0.5rem;
+
+  .frame {
+    width: 100%;
+    height: 25rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 1.5rem !important;
+    margin-top: 1.5rem !important;
+  }
+  .info-left {
+    padding: 0 !important;
+  }
+  .detail {
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .first-section {
+    border: none;
+    border-radius: 0;
+    .shadow {
+      border-radius: 0;
+      margin: auto;
+      padding: 0;
+
+      .img-container {
+        img {
+          width: 100% !important;
+          border-radius: 0;
+        }
+      }
+      .info-left {
+        margin: 0 2rem;
+      }
+    }
+  }
+}

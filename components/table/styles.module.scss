@@ -1,0 +1,16 @@
+.search-input {
+  width: 50%;
+  border-radius: 1rem;
+  border: 0.05rem solid rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-input {
+    width: 100%;
+  }
+}
